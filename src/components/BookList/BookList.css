@@ -1,0 +1,37 @@
+.books-page {
+  padding: 20px;
+}
+
+.no-books-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-weight: 800;
+}
+
+.books-found {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.book-page {
+  display: flex;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 756px) and (min-width: 399px) {
+  .book-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}

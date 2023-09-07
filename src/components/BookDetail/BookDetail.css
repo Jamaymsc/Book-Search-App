@@ -1,0 +1,47 @@
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.book-cover-container {
+    display: flex;
+    justify-self: end;
+    width: 300px;
+    background-color:rgb(237, 234, 234);
+    height: 300px;
+    padding: 10px;
+}
+
+.book-info {
+    display: flex;
+    width: 50%;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .book-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .book-cover-container {
+        display: flex;
+        justify-self: end;
+        width: 100%;
+        max-width: 300px;
+        background-color:rgb(237, 234, 234);
+        
+        padding: 10px;
+    }
+
+    .book-info {
+        display: flex;
+        width: 100%;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+  }

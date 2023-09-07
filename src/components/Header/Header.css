@@ -1,0 +1,109 @@
+.header {
+  width: 100%;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  background-image: url("https://img.freepik.com/free-photo/global-communication-equipment-in-futuristic-server-room-generated-by-ai_188544-26088.jpg?w=1800&t=st=1693836565~exp=1693837165~hmac=28a6e36c206544535a8522d26a66f9ee512fc323db675c20a2f2e9b8f5bc7859");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  z-index: 0;
+}
+
+.header ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.header-content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  height: auto;
+  width: 100%;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 30rem;
+}
+
+.filter-sort-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-container,
+.sorting-container {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.filter-select,
+.sorting-select {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 12rem;
+  height: 2rem;
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-title {
+    font-size: 2rem;
+  }
+  .search-input {
+    width: 200px;
+    max-width: 100%;
+  }
+
+  .filter-sort-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-container,
+.sorting-container {
+  display: flex;
+  flex-direction: column;
+}
+
+  .filter-select,
+  .sorting-select {
+    width: 100%;
+    max-width: 100%;
+  }
+}

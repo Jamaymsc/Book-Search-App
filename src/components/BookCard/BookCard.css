@@ -1,0 +1,51 @@
+.book-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: rgb(233, 230, 230);
+  padding: 20px 10px 10px 10px;
+  justify-content: space-between;
+}
+
+.book-cover {
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-category {
+  margin-top: 10px;
+  color: grey;
+}
+
+.book-title {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.book-authors {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: grey;
+}
+
+.book-detail {
+  display: none;
+}
+
+@media screen and (max-width: 399px) {
+  .book-card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
