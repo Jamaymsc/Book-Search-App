@@ -96,7 +96,12 @@ function App() {
   };
 
   const handleSortingChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSorting(event.target.value);
+    const newSorting = event.target.value;
+    setBooks([]);
+    setTotalItems(0);
+    setCurrentPage(1);
+    setSorting(newSorting);
+    performSearch(1, 30);
   };
 
   const loadMoreBooks = () => {
